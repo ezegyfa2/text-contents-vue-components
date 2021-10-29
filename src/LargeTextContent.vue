@@ -34,7 +34,7 @@
         }
     }
     .title {
-        mx-auto();
+        .mx-auto();
         font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         letter-spacing: 0.8rem;
         background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
@@ -52,8 +52,8 @@
         }
     }
     .content {
-        mx-auto();
-        text-white-50();
+        .mx-auto();
+        .text-white-50();
         max-width: 20rem;
         font-size: 1rem;
     }

@@ -25,7 +25,7 @@
         }
     }
     .title {
-        text-white();
+        .text-white();
         font-size: calc(1.325rem + 0.9vw);
     }
 </style>

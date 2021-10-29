@@ -22,10 +22,10 @@
     }
 
     .title {
-        text-white();
+        .text-white();
         font-size: 90%;
     }
     .content {
-        text-white-50();
+        .text-white-50();
     }
 </style>

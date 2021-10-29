@@ -16,9 +16,9 @@
     @import "globals.less";
 
     .content {
-        text-white-50();
+        .text-white-50();
     }
     .title {
-        text-white();
+        .text-white();
     }
 </style>
