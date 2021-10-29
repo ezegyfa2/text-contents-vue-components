@@ -11,3 +11,14 @@
         ]
     }
 </script>
+
+<style lang="less" scoped>
+    @import "globals.less";
+
+    .content {
+        text-white-50();
+    }
+    .title {
+        text-white();
+    }
+</style>

@@ -12,13 +12,20 @@
     }
 </script>
 
-<style scoped>
-    .description-text {
-        font-size: 90%;
-    }
+<style lang="less" scoped>
+    @import "globals.less";
+
     @media (min-width: 1200px) {
-        h4, .h4 {
+        .title {
             font-size: 1.5rem;
         }
+    }
+
+    .title {
+        text-white();
+        font-size: 90%;
+    }
+    .content {
+        text-white-50();
     }
 </style>
