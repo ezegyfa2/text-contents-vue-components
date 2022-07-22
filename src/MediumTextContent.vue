@@ -1,24 +1,16 @@
-<template lang="pug">
-    include MediumTextContent.pug
-</template>
-
 <script>
-    import TextContent from './TextContent.vue';
+    import TextContent from './TextContent/Component.vue'
 
     export default {
         mixins: [
             TextContent
-        ]
+        ],
+        data() {
+            return {
+                addedClasses: {
+                    '.title': 'h2'
+                }
+            }
+        }
     }
 </script>
-
-<style lang="less" scoped>
-    @import "globals.less";
-
-    .content {
-        .text-white-50();
-    }
-    .title {
-        .text-white();
-    }
-</style>

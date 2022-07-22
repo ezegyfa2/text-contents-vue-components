@@ -1,0 +1,36 @@
+@import "../globals.scss";
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .title {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+@media (min-width: 992px) {
+    .title {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        max-width: 20rem;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 992px) {
+    .content {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+}
+.content {
+    @extend .mx-auto;
+}

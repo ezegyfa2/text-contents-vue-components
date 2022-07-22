@@ -1,0 +1,10 @@
+@media (min-width: 1200px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1200px) {
+    .title {
+        font-size: calc(1.325rem + 0.9vw);
+    }
+}

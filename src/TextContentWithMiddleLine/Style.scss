@@ -1,0 +1,25 @@
+.container-layout {
+    min-height: fit-content;
+    max-height: 100%;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    word-wrap: break-word;
+    margin-top: 25px;
+}
+
+.line {
+    height: 11px;
+    width: 80%;
+    margin-top: 13px;
+}
+
+.content {
+    margin-top: 27px;
+    margin-bottom: 25px;
+}
