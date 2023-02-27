@@ -1,10 +1,13 @@
 <script>
     export default {
-        data() {
-            return {
-                addedClasses: {
-                    '.title': 'text-black',
-                    '.content': 'text-black-50'
+        props: {
+            added_classes: {
+                type: Object,
+                default () {
+                    return {
+                        '.title': 'text-black',
+                        '.content': 'text-black-50'
+                    }
                 }
             }
         }
