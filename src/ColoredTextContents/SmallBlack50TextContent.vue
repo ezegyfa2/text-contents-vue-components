@@ -1,10 +1,10 @@
 <script>
-    import MediumTextContent from './../MediumTextContent.vue';
+    import SmallTextContent from './../SmallTextContent/Component.vue';
     import Black50TextContent from './Black50TextContent.vue';
 
     export default {
         mixins: [
-            MediumTextContent,
+            SmallTextContent,
             Black50TextContent
         ]
     }
