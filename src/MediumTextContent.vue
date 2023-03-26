@@ -5,10 +5,13 @@
         mixins: [
             TextContent
         ],
-        data() {
-            return {
-                addedClasses: {
-                    '.title': 'h2'
+        props: {
+            added_classes: {
+                type: Object,
+                default () {
+                    return {
+                        '.title': 'h2'
+                    }
                 }
             }
         }
