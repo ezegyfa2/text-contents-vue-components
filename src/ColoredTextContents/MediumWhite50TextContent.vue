@@ -1,5 +1,5 @@
 <script>
-    import MediumTextContent from './../MediumTextContent.vue'
+    import MediumTextContent from './../MediumTextContent/Component.vue'
     import White50TextContent from './White50TextContent.vue'
 
     export default {

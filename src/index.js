@@ -8,9 +8,9 @@ export default {
         );
         registerVueComponent(
             'medium-text-content',
-            require('./MediumTextContent.vue').default,
+            require('./MediumTextContent/Component.vue').default,
             Vue,
-			'text-contents-vue-components/MediumTextContent.vue'
+			'text-contents-vue-components/MediumTextContent/Component.vue'
         );
         registerVueComponent(
             'large-text-content',
