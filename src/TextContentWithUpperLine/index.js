@@ -1,9 +1,7 @@
 export default {
     install(Vue) {
-        require('helper-vue-components/ClassAdder').default.install(Vue)
-
         registerVueComponent(
-            'text-content',
+            'upper-line-text-content',
             require('./Component.vue').default,
             Vue
         )
