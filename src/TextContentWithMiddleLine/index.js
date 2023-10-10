@@ -1,9 +1,5 @@
 export default {
     install(Vue) {
-        registerVueComponent(
-            'text-content-with-middle-line',
-            require('./Component.vue').default,
-            Vue
-        )
+        Vue.component('text-content-with-middle-line', () => import('./Component.vue'))
     }
 }

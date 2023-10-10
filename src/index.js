@@ -1,53 +1,13 @@
 export default {
     install(Vue) {
-        registerVueComponent(
-            'small-text-content',
-            require('./SmallTextContent/Component.vue').default,
-            Vue,
-			'text-contents-vue-components/SmallTextContent/Component.vue'
-        );
-        registerVueComponent(
-            'medium-text-content',
-            require('./MediumTextContent/Component.vue').default,
-            Vue,
-			'text-contents-vue-components/MediumTextContent/Component.vue'
-        );
-        registerVueComponent(
-            'large-text-content',
-            require('./LargeTextContent/Component.vue').default,
-            Vue,
-			'text-contents-vue-components/LargeTextContent/Component.vue'
-        );
-        registerVueComponent(
-            'title-with-icon',
-            require('./TitleWithIcon/Component.vue').default,
-            Vue,
-			'text-contents-vue-components/ColoredTextContents/LargeWhite50TextContent.vue'
-        );
+        Vue.component('small-text-content', () => import('./SmallTextContent/Component.vue'));
+        Vue.component('medium-text-content', () => import('./MediumTextContent/Component.vue'));
+        Vue.component('large-text-content', () => import('./LargeTextContent/Component.vue'));
+        Vue.component('title-with-icon', () => import('./TitleWithIcon/Component.vue'));
         //colored
-        registerVueComponent(
-            'large-white50-text-content',
-            require('./ColoredTextContents/LargeWhite50TextContent.vue').default,
-            Vue,
-			'text-contents-vue-components/ColoredTextContents/LargeWhite50TextContent.vue'
-        );
-        registerVueComponent(
-            'medium-white50-text-content',
-            require('./ColoredTextContents/MediumWhite50TextContent.vue') .default,
-            Vue,
-			'text-contents-vue-components/ColoredTextContents/MediumWhite50TextContent.vue'
-        );
-        registerVueComponent(
-            'small-white50-text-content',
-            require('./ColoredTextContents/SmallWhite50TextContent.vue').default,
-            Vue,
-			'text-contents-vue-components/ColoredTextContents/SmallWhite50TextContent.vue'
-        );
-        registerVueComponent(
-            'small-black50-text-content',
-            require('./ColoredTextContents/SmallBlack50TextContent.vue').default,
-            Vue,
-			'text-contents-vue-components/ColoredTextContents/SmallBlack50TextContent.vue'
-        );
+        Vue.component('large-white50-text-content', () => import('./ColoredTextContents/LargeWhite50TextContent.vue'));
+        Vue.component('medium-white50-text-content', () => import('./ColoredTextContents/MediumWhite50TextContent.vue'));
+        Vue.component('small-white50-text-content', () => import('./ColoredTextContents/SmallWhite50TextContent.vue'));
+        Vue.component('small-black50-text-content', () => import('./ColoredTextContents/SmallBlack50TextContent.vue'));
     },
 };

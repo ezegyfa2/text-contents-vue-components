@@ -1,10 +1,5 @@
 export default {
     install(Vue) {
-        registerVueComponent(
-            'large-text-content',
-            require('./Component.vue').default,
-            Vue,
-			'text-contents-vue-components/LargeTextContent/Component.vue'
-        )
+        Vue.component('large-text-content', () => import('./Component.vue'))
     }
 }
